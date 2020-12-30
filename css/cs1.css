@@ -3,7 +3,7 @@ body.scrollbar {
   margin-left: 0px;
   overflow-x: hidden;
   height: 100%;
-  font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;
   background-color: transparent;
   background: url(../img/bg/bg-new1.jpg) no-repeat top center fixed; 
