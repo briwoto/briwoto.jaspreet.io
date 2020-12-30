@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Jaspreet Singh | Stand-up Comedian</title>
+    <link href="css/cs1.css" rel="stylesheet">
+    <link href="css/calendar.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="img/icons/favicon2.png">
+</head>
+
+<body class="scrollbar" id="addEvent" data-spy="scroll" data-target=".navbar-fixed-top">
+    <div class="container text_div">
+        <p class="beauty_text">
+            beh ke kol khuda de jatt ne lekh likhaya
+        </p>    
+    </div>
+    
+    <div class="container mt-40 form_container">
+        <div class="submitEventForm font_default" id="e_input">
+            <div class="form-group"><input type="text" class="form-control" id="event_name" name="event_name" placeholder="Event Name..." /></div>
+            <div class="form-group"><input type="text" class="form-control" id="city" name="city" placeholder="City..." /></div>
+            <div class="form-group">
+                <input class="audience-data" type="text" name="event_date" placeholder="Date *" autocomplete="off"/>
+                <!-- <iframe class="calendar_frame d_none" id="calendar-app" src="./calendar.html"></iframe> -->
+                <div class="calendar calendar-div d_none" id="calendar-app">
+                              <div class="calendar--day-view" id="day-view">
+                                <span class="day-view-exit" id="day-view-exit">&times;</span>
+                                <span class="day-view-date" id="day-view-date">MAY 29 2016</span>
+                                <div class="day-view-content">
+                                  <div class="day-highlight">
+                                    You <span class="day-events" id="day-events">had no events for today</span>. &nbsp; <span tabindex="0" onkeyup="if(event.keyCode != 13) return; this.click();" class="day-events-link" id="add-event" data-date>Add a new event?</span>
+                                  </div>
+                                  <div class="day-add-event" id="add-day-event-box" data-active="false">
+                                    <div class="row row-cal">
+                                      <div class="half">
+                                        <label class="add-event-label">
+                                           Name of event
+                                          <input type="text" class="add-event-edit add-event-edit--long" placeholder="New event" id="input-add-event-name">
+                                         
+                                        </label>
+                                      </div>
+                                      <div class="qtr">
+                                        <label class="add-event-label">
+                                      Start Time
+                                          <input type="text" class="add-event-edit" placeholder="8:15" id="input-add-event-start-time" data-options="1,2,3,4,5,6,7,8,9,10,11,12" data-format="datetime">
+                                          <input type="text" class="add-event-edit" placeholder="am" id="input-add-event-start-ampm" data-options="a,p,am,pm">
+                                        </label>
+                                      </div>
+                                      <div class="qtr">
+                                        <label class="add-event-label">
+                                      End Time
+                                          <input type="text" class="add-event-edit" placeholder="9" id="input-add-event-end-time" data-options="1,2,3,4,5,6,7,8,9,10,11,12" data-format="datetime">
+                                          <input type="text" class="add-event-edit" placeholder="am" id="input-add-event-end-ampm" data-options="a,p,am,pm">
+                                        </label>
+                                      </div>
+                                      <div class="half">
+                                        <a onkeyup="if(event.keyCode != 13) return; this.click();" tabindex="0" id="add-event-save" class="event-btn--save event-btn">save</a>
+                                        <a tabindex="0" id="add-event-cancel" class="event-btn--cancel event-btn">cancel</a>
+                                      </div>
+                                    </div>
+                                    
+                                  </div>
+                                  <div id="day-events-list" class="day-events-list">
+                                    
+                                  </div>
+                                  <div class="day-inspiration-quote" id="inspirational-quote">
+                                    Every child is an artist.  The problem is how to remain an artist once he grows up. –Pablo Picasso
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="calendar--view" id="calendar-view">
+                                <div class="cview__month">
+                                  <span class="cview__month-last" id="calendar-month-last">Apr</span>
+                                  <span class="cview__month-current" id="calendar-month">May</span>
+                                  <span class="cview__month-next" id="calendar-month-next">Jun</span>
+                                </div>
+                                <div class="cview__header">Sun</div>
+                                <div class="cview__header">Mon</div>
+                                <div class="cview__header">Tue</div>
+                                <div class="cview__header">Wed</div>
+                                <div class="cview__header">Thu</div>
+                                <div class="cview__header">Fri</div>
+                                <div class="cview__header">Sat</div>
+                                <div class="calendar--view" id="dates"></div>
+                              </div>
+                              <div class="footer">
+                                <span><span id="footer-date" class="footer__link"></span></span>    
+                              </div>
+                            </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <input class="col-xs-2 col-xs-offset-1" type="number" class="form-control" name="hh"  placeholder="hh"/>
+                    <input class="col-xs-2 col-xs-offset-1" type="number" class="form-control" name="mm"  placeholder="mm"/>
+                    <select class="col-xs-3 col-xs-offset-1" name="am_pm">
+                        <option value="pm">PM</option>
+                        <option value="am">AM</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="booking_url" placeholder="Booking Link..." />
+            </div>
+            <div>
+              <div class="w_200" id="addMoreDiv">
+                <div class="w_50 d_ib"><img class="h_50" src="img/icons/plus_white.png"></div>
+                <div class="add_more_btn lh_100 d_ib">Add More</div>
+              </div>
+              <div class="generate_formjson font_default mt_5" id="generateJson">Create</div>  
+            </div>
+            
+        </div>
+        <form class="font_default submitEventForm" id="gform" method="POST" target="_blank"  action="https://script.google.com/macros/s/AKfycbzGEseutaxNO5XFJWQwLoWFv-WnNka174q27jvnIA/exec">
+            <div class="form-group">
+              <textarea name="event_json" class="d_none" id="eventJson"></textarea>
+            </div>
+            <button class="form_button d_none" id="formButton" type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <div>
+            <span><a href="home.html" class="back_home font_default mt_5">Back to Home</a></span>
+        </div>
+    </div>
+    <footer>
+        <div class="container text-center font_default fixed_bottom" style="color:white;">
+            <p>Powered by Comedy Circuit India &copy;</p>
+        </div>
+    </footer>
+
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script type='text/javascript' src="./js/calendar.js"></script>
+    <script src="js/js2.js"></script>
+    <script src="js/mini-event-calendar.min.js"></script>
+    <script type='text/javascript' src="js/autogrow.js"></script>
+    <script type='text/javascript'>
+      $(function() {
+        $('textarea').autogrow();
+      });
+    </script>
+    <script type='text/javascript'>
+         $(function() {
+            $("#calendar").MEC();
+         });
+      </script>
+
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script> -->
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script> -->
+
+    <!-- Theme JavaScript -->
+
+
+</body>
+
+</html>
