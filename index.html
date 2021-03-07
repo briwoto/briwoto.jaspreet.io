@@ -88,14 +88,27 @@
             </div>
             <div class="row">
                 <div class="col-xs-12 col-sm-3 col-sm-offset-8 mt_100 font_lato" id="contactGrouped"> 
+                    <div class="alert alert-danger d_none" id="clientFormAlert1">
+                        The sections with <strong>*</strong> sign, are mandatory
+                     </div>
                     <div class="contact_grouped_section row" style="font-size: 16px; padding: 15px">
                         <div class="col">
-                            <div>
-                                <span>Get in touch for your live standup comedy show requirements</span>
+                            <div style="padding: 5px;">
+                                <span style="font-weight: 800;">Join my mailing list</span>
+                                <br />
+                                <span>Get early updates on live shows,content and merchandise</span>
                             </div>
-                            <div class="bg_black_trs" style="padding: 15px">
+                            <!-- <div class="bg_black_trs" style="padding: 15px">
                                 <span>Send in your request/details.: <a href="mailto:jaspreetsingh.199@gmail.com" style="color: white; text-decoration: underline;">jaspreetsingh.199@gmail.com</a></span>
-                            </div>
+                            </div> -->
+                            <form class="audience_form bg_black_trs" id="gform1" data-id="audience1" method="POST" target="_blank" action="https://script.google.com/macros/s/AKfycbxovxsYQR-wtV9mCnJZLJ0vJFqM1ACxtPtAdiYX/exec">
+                                <div class="form_data">
+                                   <div><input class="audience-data" type="text" name="audience_name" placeholder="Your name  *" required="required" autocomplete="off"/></div>
+                                   <div><input class="audience-data" type="text" name="audience_city" placeholder="City " /></div>
+                                   <div><input class="audience-data" type="text" name="audience_email" placeholder="Email *" required="required" autocomplete="off"/></div>
+                                   <div><button class="send_button" data-id="audience1" id="audienceInfo1">STAY UPDATED</button></div>
+                               </div>
+                           </form>
                         </div>
                     </div>
                 </div>
