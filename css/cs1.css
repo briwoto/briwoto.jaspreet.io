@@ -306,6 +306,10 @@ a:focus {
     margin-top: 8px;
   }
 }
+.top_text {
+  max-width: fit-content;
+  margin: auto;
+}
 .btn {
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
