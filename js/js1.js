@@ -393,7 +393,12 @@ function readTextFile(file)
 }
 
 function get_event_summary(str_eventlist) {
-	arr_events = JSON.parse(str_eventlist);
+  arr_events = JSON.parse(str_eventlist);
+  if (!arr_events.length) {
+    $('#frame_box_main').removeClass("scrollbar")
+    $('#frame_box_main').append($no_event_box);
+    return
+  }
 	arr_events.forEach( function(elem) {
 		arr_event_date = elem["date"];
     arr_event_date[1] = Number(arr_event_date[1]);
