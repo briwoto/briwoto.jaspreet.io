@@ -71,32 +71,49 @@
         <!-- /.container -->
     </nav>
     <section class="intro">
-        <div class="w_100 home_content">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-12 w_100 bg_black_trs">
-                        <div class="font_default" style="padding: 15px">4 Continents, 9 Countries, 70+ Million Youtube views, 700+ shows and counting...</div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 w_100 bg_black_trs">
-                        <div class="font_default" style="padding: 15px">Featured on BBC Asia Network London and ABC News Australia.</div>
+        <div class="home_content">
+            <div class="row">
+                <div class="col">
+                    <div class="top_text bg_black_trs">
+                        <div class="bg_black_trs font_default p_2">4 Continents, 9 Countries, 70+ Million Youtube views, 700+ shows and counting...</div>
+                        <div class="bg_black_trs font_default p_2">Featured on BBC Asia Network London and ABC News Australia.</div>
                     </div>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-3 col-sm-offset-1 scrollbar" id="frame_box_main">
             </div>
             <div class="row">
-                <div class="col-xs-12 col-sm-3 col-sm-offset-8 mt_100 font_lato" id="contactGrouped"> 
+                <div class="col-xs-12 col-sm-3 col-sm-offset-8 mt_30 font_lato" id="contactGrouped"> 
+                    <div class="alert alert-danger d_none" id="clientFormAlert1">
+                        The sections with <strong>*</strong> sign, are mandatory
+                     </div>
                     <div class="contact_grouped_section row" style="font-size: 16px; padding: 15px">
                         <div class="col">
-                            <div>
-                                <span>Get in touch for your live standup comedy show requirements</span>
+                            <div style="padding: 5px;">
+                                <span style="font-weight: 800;">Join my mailing list</span>
+                                <br />
+                                <span>Get early updates on live shows,content and merchandise</span>
                             </div>
-                            <div class="bg_black_trs" style="padding: 15px">
+                            <!-- <div class="bg_black_trs" style="padding: 15px">
                                 <span>Send in your request/details.: <a href="mailto:jaspreetsingh.199@gmail.com" style="color: white; text-decoration: underline;">jaspreetsingh.199@gmail.com</a></span>
+                            </div> -->
+                            <form class="audience_form bg_black_trs" id="gform1" data-id="audience1" method="POST" target="_blank" action="https://script.google.com/macros/s/AKfycbxovxsYQR-wtV9mCnJZLJ0vJFqM1ACxtPtAdiYX/exec">
+                                <div class="form_data">
+                                   <div><input class="audience-data" type="text" name="audience_name" placeholder="Your name  *" required="required" autocomplete="off"/></div>
+                                   <div><input class="audience-data" type="text" name="audience_city" placeholder="City *" required="required" /></div>
+                                   <div><input class="audience-data" type="text" name="audience_email" placeholder="Email *" required="required" autocomplete="off"/></div>
+                                   <div><button class="send_button" data-id="audience1" id="audienceInfo1">STAY UPDATED</button></div>
+                               </div>
+                           </form>
+                           <div class="bg_black_trs" style="margin-top: 15px;">
+                                <div style="padding: 5px;">
+                                        <span>Get in touch for your live standup comedy show requirements</span>
+                                    </div>
+                                    <div style="padding: 5px;">
+                                        <span>Send in your request/details.: <a href="mailto:jaspreetsingh.199@gmail.com" style="color: white; text-decoration: underline;">jaspreetsingh.199@gmail.com</a></span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -109,12 +126,30 @@
                 <div class="row mt_2">
                     <div class="col-sm-4 video_cutout">
                         <div class="video_preview_div_short">
+                            <iframe class="video_frame" src="https://www.youtube.com/embed/-1i1gagGtu4?modestbranding=0&showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <div class="caption">
+                                <!-- <p class="video_subtext">Talking about my talkativeness and driving in Delhi</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 video_cutout">
+                        <div class="video_preview_div_short">
+                            <iframe class="video_frame" src="https://www.youtube.com/embed/ll8JtvcH4C0?modestbranding=0&showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <div class="caption">
+                                <!-- <p class="video_subtext">Talking about my talkativeness and driving in Delhi</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 video_cutout">
+                        <div class="video_preview_div_short">
                             <iframe class="video_frame" src="https://www.youtube.com/embed/m_sq0Wh9eiw?modestbranding=0&showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                             <div class="caption">
                                 <!-- <p class="video_subtext">Talking about my talkativeness and driving in Delhi</p> -->
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="row">
                     <div class="col-sm-4 video_cutout">
                         <div class="video_preview_div_short">
                             <iframe class="video_frame" src="https://www.youtube.com/embed/yPGXj4e8imE?modestbranding=0&showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -130,33 +165,22 @@
                                 <!-- <p class="video_subtext">Observations of a shopping experience with wife</p> -->
                             </div>
                         </div>
-                    </div>                  
+                    </div>
+                    <div class="col-sm-4 video_cutout">
+                        <div class="video_preview_div_short">
+                            <iframe class="video_frame" src="https://www.youtube.com/embed/rat1rQlc0Pk?modestbranding=0&showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>           
                 </div>
                 <div class="row">
                     <div class="col-sm-4 video_cutout">
                         <div class="video_preview_div_short">
-                            <iframe class="video_frame" src="https://www.youtube.com/embed/rat1rQlc0Pk?modestbranding=0&showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                            <div class="caption">
-                                <!-- <p class="video_subtext">Jokes about my all time fear - Horror movies</p> -->
-                                <!-- <div class="sms">
-                                    <a href="https://www.facebook.com/TheLifeOfPaaji" target="_blank" class="social_media_thumbnail"><img class="sm_small" src="./img/logo/facebook.png"></a>
-                                    <a href="https://instagram.com/lifeofpaaji/" target="_blank" class="social_media_thumbnail"><img class="sm_small" src="./img/logo/instagram.png"></a>
-                                    <a href="https://twitter.com/lifeofpaaji" target="_blank" class="social_media_thumbnail"><img class="sm_small" src="./img/logo/twitter.png"></a>
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 video_cutout">
-                        <div class="video_preview_div">
                             <iframe class="video_frame" src="https://www.youtube.com/embed/NXmxwb0TRpk?modestbranding=0&showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                            <div class="caption">
-                                <!-- <p class="video_subtext">Jokes about my thought process while searching for a house in the millenial city-Gurgaon</p> -->
-                            </div>
                         </div>
                     </div>
                     <div class="col-sm-4 video_cutout">
-                        <div class="video_preview_div">
-                            <iframe class="video_frame fb_video" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FBBCAsianNetwork%2Fvideos%2F10160590131085381%2F&show_text=0" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+                        <div class="video_preview_div_short">
+                            <iframe class="video_frame" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FBBCAsianNetwork%2Fvideos%2F10160590131085381%2F&show_text=0" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
                         </div>
                     </div>
                 </div>
@@ -187,7 +211,7 @@
                         </div>
                     </div>                  
                 </div>
-                <div class="section_header font_default">Thoda Chill Thoda Grill</div>
+                <div class="section_header font_default">Thoda Chill Thoda Grill - A Gaana original podcast</div>
                 <div class="row">
                     <a href="https://gaana.com/season/thoda-chill-thoda-grill" target="_blank">
                         <img src="./img/photos/gaana-podcast.png" alt="thoda-chill-thoda-grill" class="podcast_img_large hidden-xs" />

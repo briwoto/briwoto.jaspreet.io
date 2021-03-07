@@ -370,6 +370,8 @@ $('.img_download').on('mouseout', function() {
 
 function readTextFile(file)
 {
+  try {
+    $('#frame_box_main').addClass("scrollbar")
     var rawFile = new XMLHttpRequest();
     rawFile.open("GET", file, false);
     rawFile.onreadystatechange = function ()
@@ -383,7 +385,11 @@ function readTextFile(file)
             }
         }
     }
-    rawFile.send(null);
+    rawFile.send(null); 
+  } catch (err) {
+    $('#frame_box_main').removeClass("scrollbar")
+    $('#frame_box_main').append($no_event_box);
+  }
 }
 
 function get_event_summary(str_eventlist) {
@@ -416,3 +422,9 @@ $(document).ready(function() {
     adjustBackgroundImage();
     readTextFile('/events/events.txt')
 });
+
+$no_event_box = $(`
+    <div class="frame_box bg_black_trs">
+        <p class="frame_box_info">`+"Events coming soon!"+`</p>
+    </div>
+`);
