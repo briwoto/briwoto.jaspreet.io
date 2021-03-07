@@ -512,7 +512,7 @@ a.page-scroll:focus, a.page-scroll:hover {
 input::-webkit-input-placeholder {
 color: rgba(255,255,255,0.6) !important; font-family: 'calibri'; 
 }
-input::-moz-placeholder {   Firefox 19+ 
+input::-moz-placeholder {  /*Firefox 19+ */
 color: rgba(255,255,255,0.6) !important;  font-family: 'calibri'; 
 }
 input:-ms-input-placeholder {  
@@ -521,7 +521,7 @@ color: rgba(255,255,255,0.6) !important;  font-family: 'calibri';
 textarea::-webkit-input-placeholder {
 color: rgba(255,255,255,0.6) !important; font-family: 'calibri'; 
 }
-textarea::-moz-placeholder {   Firefox 19+ 
+textarea::-moz-placeholder {   /*Firefox 19+ */
 color: rgba(255,255,255,0.6) !important;  font-family: 'calibri'; 
 }
 textarea:-ms-input-placeholder {  
