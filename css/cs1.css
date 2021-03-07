@@ -944,6 +944,7 @@ div#frame_box_main {
   div#frame_box_main {
     left: 0px;
     position: static;
+    margin-top: 15px;
   }
 }
 @media (max-width: 595px) {
