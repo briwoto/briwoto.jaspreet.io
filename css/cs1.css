@@ -502,7 +502,7 @@ a.page-scroll:focus, a.page-scroll:hover {
   height: 50px;
   background-color: rgb(10,10,10);
   cursor: pointer;
-  border: none;
+  border: thin solid rgb(50,50,50);
   border-radius: 5px;
   color: white;
   position: relative;
