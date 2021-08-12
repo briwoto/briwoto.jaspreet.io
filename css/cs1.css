@@ -934,6 +934,7 @@ div#frame_box_main {
 @media (max-width: 668px) {
   .content-section {
     padding-top: 50px;
+    margin-top: 50px;
   }
   .content-section-center {
     padding-top: 50px;
