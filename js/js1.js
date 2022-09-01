@@ -55,7 +55,7 @@ $("#thankyouButton").on('click', function() {
     $(".form_data div select").val("none");
 });
 $("#thankyouButton1").on('click', function() {
-    $("#thankyou_message1").addClass("d_none");
+    $("#thankyou_message").addClass("d_none");
     $("#gform1 .form_data div input").val("");
     $("#gform1 .form_data div textarea").val("");
     $("#gform1 .form_data div select").val("none");
@@ -98,7 +98,7 @@ $('#audienceInfo1').on('click', function() {
     if (result) {
         $('#clientFormAlert1').addClass("d_none");
         setTimeout(function(){
-            $("#thankyou_message1").removeClass("d_none");
+            $("#thankyou_message").removeClass("d_none");
         },500);    
     } else {
         $('#clientFormAlert1').removeClass("d_none");
