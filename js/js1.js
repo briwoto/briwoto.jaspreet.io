@@ -81,12 +81,12 @@ $("#clientInfo,#audienceInfo").on('click', function() {
     }
     
     if (result) {
-        $('#clientFormAlert').addClass("d_none");
+        $('#clientFormAlert1').addClass("d_none");
         setTimeout(function(){
             $("#thankyou_message").removeClass("d_none");
         },500);    
     } else {
-        $('#clientFormAlert').removeClass("d_none");
+        $('#clientFormAlert1').removeClass("d_none");
         // return;
     }
 });
@@ -96,7 +96,7 @@ $('#audienceInfo1').on('click', function() {
       if ($(this).val() == "" || $(this).val() == "none" ) {result = false;}
     });
     if (result) {
-        $('#clientFormAlert').addClass("d_none");
+        $('#clientFormAlert1').addClass("d_none");
         setTimeout(function(){
             $("#thankyou_message1").removeClass("d_none");
         },500);    
